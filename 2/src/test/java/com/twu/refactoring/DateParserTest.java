@@ -170,7 +170,6 @@ public class DateParserTest {
         Date expectedDate = calendar.getTime();
 
         Date result = new DateParser("2012-12-31T23:59Z").parse();
-
         assertThat(result, is(expectedDate));
     }
 }
