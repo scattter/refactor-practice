@@ -1,10 +1,19 @@
 package com.twu.refactoring;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
+
 public class NumberCruncher {
     private final int[] numbers;
 
     public NumberCruncher(int... numbers) {
         this.numbers = numbers;
+    }
+
+    public Boolean equalsIsTrue(Boolean str){
+        if (){
+            return true;
+        }
+        return false;
     }
 
     public int countEven() {
