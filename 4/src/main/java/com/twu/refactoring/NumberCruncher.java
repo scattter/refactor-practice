@@ -9,12 +9,6 @@ public class NumberCruncher {
         this.numbers = numbers;
     }
 
-    public Boolean equalsIsTrue(Boolean str){
-        if (){
-            return true;
-        }
-        return false;
-    }
 
     public int countEven() {
         int count = 0;
