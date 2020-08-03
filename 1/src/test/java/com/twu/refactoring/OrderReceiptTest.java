@@ -31,6 +31,10 @@ public class OrderReceiptTest {
 
         String output = receipt.printReceipt();
 
+//        for (int i = 0; i < lineItems.size(); i++) {
+//            LineItem info = lineItems.get(i);
+//            assertThat(output, containsString(info.getDescription() + "\t" + info.getPrice()+ "\t" + info.getQuantity() + "\t" + info.totalAmount()+"\n" ));
+//        }
         assertThat(output, containsString("milk\t10.0\t2\t20.0\n"));
         assertThat(output, containsString("biscuits\t5.0\t5\t25.0\n"));
         assertThat(output, containsString("chocolate\t20.0\t1\t20.0\n"));
