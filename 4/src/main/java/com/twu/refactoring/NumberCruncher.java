@@ -16,11 +16,7 @@ public class NumberCruncher {
     }
 
     public int countOdd() {
-        int count = 0;
-        for (int number : numbers) {
-            if (number % 2 == 1) count++;
-        }
-        return count;
+        return numbers.length - countEven();
     }
 
     public int countPositive() {
@@ -32,10 +28,6 @@ public class NumberCruncher {
     }
 
     public int countNegative() {
-        int count = 0;
-        for (int number : numbers) {
-            if (number < 0) count++;
-        }
-        return count;
+        return numbers.length - countPositive();
     }
 }
